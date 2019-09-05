@@ -7,33 +7,34 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">GHIA GIS</a>
+        <a class="navbar-brand" href="../"><img src="img/ghia-logo.jpg" alt="GHIA" height="30px"></a>
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
             <li>
-                <a href="intro.html">Home</a>
+                <a href="../map.html">Map</a>
             </li>
         </ul>
         <ul class="nav navbar-nav">
             <li>
-                <a href="index.html">Survey</a>
+                <a href="../green-map.html">Green Map</a>
             </li>
         </ul>
         <ul class="nav navbar-nav">
             <li>
-                <a href="map.html">Map</a>
+                <a href="#">min Q survey</a>
             </li>
         </ul>
         <ul class="nav navbar-nav">
             <li>
-                <a href="about.html">About</a>
+                <a href="q-map.html">min Q map</a>
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><img height="40px" src="img/ghia-logo.jpg"></li>
+            <li><a class="nav-link" href="https://www.tellus-toolkit.com" target="_blank">Build by
+                <img alt="The TellUs Toolkit" height="30px"
+                     src="https://www.tellus-toolkit.com/img/TellUs-logo-200.png"/></a></li>
         </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
@@ -51,19 +52,22 @@
         <div class="row">
             <div class="col-xs-4">
                 <a class="btn btn-default" ng-click="next()" ng-if="debug">Next</a>
-                <a class="btn btn-default" href="" ng-bind-html="language.backButton" ng-if="!(config.disableBackButton === 'true') && canGoBack()" onclick="history.back()"></a>
+                <a class="btn btn-default" href="" ng-bind-html="language.backButton"
+                   ng-if="!(config.disableBackButton === 'true') && canGoBack()" onclick="history.back()"></a>
             </div>
 
             <div class="col-xs-4">
                 <div class="progress">
                     <div class="progress-bar" ng-style="{ width: progressStyle()}" role="progressbar">
-                        <span class="sr-only">{{ progress() * 100 | number:0}}% complete</span>{{ progress() * 100 | number:0}}%
+                        <span class="sr-only">{{ progress() * 100 | number:0}}% complete</span>{{ progress() * 100 |
+                        number:0}}%
                     </div>
                 </div>
             </div>
 
             <div class="col-xs-4">
-                <a class="btn btn-default pull-right" ng-bind-html="language.btnHelp" ng-click="help()" ng-if="hasHelp()"></a>
+                <a class="btn btn-default pull-right" ng-bind-html="language.btnHelp" ng-click="help()"
+                   ng-if="hasHelp()"></a>
             </div>
         </div>
     </div>

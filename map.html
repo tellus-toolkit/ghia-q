@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="GHIA mapping application" name="description">
+    <title>GHIA Mapping Application</title>
+    <meta content="TellUs Toolkit Ltd - Richard Kingston" name="author">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.default.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link crossorigin="" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          rel="stylesheet"/>
+    <link href="css/leaflet/Leaflet.NavBar.css" rel="stylesheet">
+    <link href="css/leaflet/leaflet-panel-layers.css" rel="stylesheet">
+    <link href="css/leaflet/Control.Geocoder.css" rel="stylesheet">
+    <link href="css/leaflet/MarkerCluster.css" rel="stylesheet">
+    <link href="css/leaflet/MarkerCluster.Default.css" rel="stylesheet">
+</head>
+<body>
+<?php header('Access-Control-Allow-Origin: https://arcgis.its.manchester.ac.uk') ?>
+<nav class="navbar navbar-default nav-fixed-top" id="app-nav-bar" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">GHIA GIS</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="intro.html">Home</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="index.html">Survey</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="map.html">Map</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="about.html">About</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><img height="40px" src="img/ghia-logo.jpg"></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+<div class="visible-lg visible-md">
+    <div class="well" id="sidemenu">
+        <div class="divider10"></div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h4 class="list-group-item-heading">
+                    The GHIA mapping tool collects information about your use of green space in Greater Manchester.</h4>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h4 class="list-group-item-heading">Collecting your views</h4>
+                <p class="list-group-item-text">
+                    Once you have located a place you are interested click on that place and tell us your thoughts about
+                    it.
+                </p>
+            </div>
+            <div class="panel-body">
+                <h4 class="list-group-item-heading">Finding your places</h4>
+                <p class="list-group-item-text">
+                    You can zoom in to any area of the map or search for a place you know.
+                </p>
+            </div>
+            <div class="panel-body">
+                <h4 class="list-group-item-heading">Using your responses</h4>
+                <p class="list-group-item-text">
+                    We will use what you tell us to develop a better understanding of how you use these places and what
+                    benefits they provide to you.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="map-canvas"></div>
+
+<!-- geoJSON data -->
+<script src="json/gm.js"></script>
+<script src="json/districts.js"></script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--script src="ext/customScroll/js/jquery.mCustomScrollbar.min.js"></script>
+<script src="ext/customScroll/js/jquery.mousewheel.min.js"></script-->
+<script src="js/application.js"></script>
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script crossorigin=""
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+
+<script src="js/leaflet/L.Mask.js"></script>
+<script src="js/leaflet/L.Control.ZoomBox.min.js"></script>
+<script src="js/leaflet/leaflet-panel-layers.js"></script>
+<script src="js/leaflet/styledLayerControl.js"></script>
+<script src="js/leaflet/L.NavBar.js"></script>
+<script src="js/leaflet/Control.Geocoder.js"></script>
+<script src="js/leaflet/leaflet-omnivore.min.js"></script>
+<script src="js/leaflet/MarkerCluster.js"></script>
+<script src="js/jsonStyle.js"></script>
+<script src="js/map2.js"></script>
+</body>
+</html>

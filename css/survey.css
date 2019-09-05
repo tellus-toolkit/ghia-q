@@ -1,0 +1,100 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+#sidemenu {
+    top: 20px;
+    height: 90%;
+    bottom: 5px;
+    left: 5px;
+    width: 270px;
+    background-color: #005f6b;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+    padding: 5px;
+    margin: 20px;
+    overflow: auto;
+    z-index: 1000;
+}
+
+#survey {
+    top: 20px;
+    height: 90%;
+    bottom: 5px;
+    left: 5px;
+    background-color: #005f6b;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+    padding: 5px;
+    margin: 20px;
+    overflow: auto;
+    z-index: 1000;
+}
+
+hr {
+    height: 5px;
+    background-color: #005f6b;
+    /* color: #005f6b;
+    border:none; */
+}
+th {
+    vertical-align: text-top;
+}
+
+td {
+    align: center;
+}
+
+strong {
+    font-weight: bolder;
+    color: red;
+}
+
+h4.list-group-item-heading {
+    padding-bottom: 10px;
+}
+
+#app-nav-bar {
+    /*position: absolute;*/
+    display: block;
+    width: 100%;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-signin-heading, .form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input {
+    margin-bottom: 10px;
+}
+
+/*Overwrite bootstrap */
+body.modal-open {
+    margin-right: 0;
+}

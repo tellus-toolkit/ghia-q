@@ -1,0 +1,21 @@
+						Bolton
+255	222	0	#FFDE00		Bury
+239	61	51	#EF3D33		Manchester
+0	161	179	#00A1B3		Oldham
+2	154	67	#029A43		Rochdale
+231	41	131	#E72983		Salford
+7	92	89	#075C59		Stockport
+13	155	219	#0D9BDB		Tameside
+15	132	202	#0F84CA		Trafford
+0	131	183	#0083B7		Wigan
+
+Red
+Blue
+Pink
+Yellow
+Green
+Purple
+Gold 
+Orange
+Brown
+Black

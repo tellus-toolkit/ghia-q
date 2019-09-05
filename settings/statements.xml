@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+// 
+// This is the place for your statements. The maximum 
+// number of statements is theoretically unlimited, but
+// less then 50 statements are advisable.
+// If your are using German Umlauts and other special 
+// characters, make sure, that you save this XML-file 
+// as an UTF-8-document. White-space inbetween the 
+// nodes are ignored. Any white-space within the text-
+// nodes, including leading or trailing whitespace and 
+// line breaks, is preserved.
+//
+// EXAMPLE
+// Let's define some statements concerning FlashQ:
+// Statement 1: FlashQ is very usefull.
+// Statement 2: I prefer offline surveys.
+// Statement 3: FlashQ is too complicated to configure.
+//
+// Each statement requires a separate statement-node
+// consisting out of an opening and a closing tag. The 
+// statement itself goes between this two tags. 
+// The unique statement id is saved as an 
+// attribute called 'id'. We have three example
+// statements and we need therefore three statement-
+// nodes and one parent-node. 
+//
+// <statements version="1.0" htmlparse="false">
+//   <statement id="1">FlashQ is very usefull.</statement>
+//   <statement id="2">I prefer offline surveys.</statement>
+//   <statement id="3">FlashQ is too complicated to configure</statement>
+// </statements>
+// 
+// ===================================================
+// 
+-->
+
+<statements version="1.0" htmlParse="false">
+  <statement id="1">I need to get out of my home and be active in the natural world.</statement>
+  <statement id="2">I have no interest in activities outdoors: I would rather stay in.</statement>
+  <statement id="3">Working in green spaces gives me a sense of independence.</statement>
+  <statement id="4">Green spaces are open places where I can associate and participate in social life.</statement>
+  <statement id="5">Being outdoors can remind me that the world is a wonderful place.</statement>
+  <statement id="6">Growing things with others makes me part of a place and community.</statement>
+  <statement id="7">Uneven ground in green spaces and by trees in streets make it difficult for me to get around.</statement>
+  <statement id="8">I sometimes worry about crime in green spaces, and this can put me off using them.</statement>
+  <statement id="9">Green spaces conjure memories of forgotten childhood adventures.</statement>
+  <statement id="10">Green places evoke memories of people and events that have shaped who I am.</statement>
+  <statement id="11">Time active in nature can make me feel healthier and younger again.</statement>
+  <statement id="12">I often need to feel the fresh air or feel the weather - sunshine and wind.</statement>
+  <statement id="13">Green spaces offer rare moments of tranquillity and help erase the stress of modern life.</statement>
+  <statement id="14">I prefer the bustle of the city: being in nature can make me feel lonely.</statement>
+  <statement id="15">Green spaces are places to learn and share knowledhe of nature.</statement>
+</statements>

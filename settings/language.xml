@@ -120,7 +120,7 @@
     <item id="transferFailed">Data submission failed. Please try again or mail your results via email/post.</item>
     <item id="transferOk">Thank you for submitting your responses.{br}{br}You can now look at a map to see where other
         people have responded and see what they said.{br}{br}
-        {a href="map.html"}{u}View the map{/u}{/a}
+        {a href="q-map.html" class="btn btn-primary ng-binding" }View the map{/a}
     </item>
 
     <!-- send data via mail, only displayed if submitUrl is blank (see config-file) -->

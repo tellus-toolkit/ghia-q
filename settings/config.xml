@@ -59,7 +59,7 @@
         <input id="postcode" name="postcode" maxlength="10" placeholder=" enter your postcode" size="15" type="text"
                onclick="checkPostcode"/>
 
-        <note>Which District that you live in?</note>
+        <note>Which District do you live in?</note>
         <input type="select" required="true">Bolton;Bury;Manchester;Oldham;Rochdale;Salford;Stockport;Tameside;Trafford;Wigan</input>
 
         <hr />

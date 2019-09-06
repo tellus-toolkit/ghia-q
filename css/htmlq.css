@@ -20,8 +20,6 @@ body {
     box-shadow: 6px 6px 5px #888888;
     background-color: white;
     z-index: 999;
-
-
     /* http://maettig.com/code/css/text-overflow-ellipsis.html */
     overflow: hidden; /* required for text-overflow */
 }
@@ -72,7 +70,7 @@ li.draggable {
 }
 
 .droppable-active.occupied {
-    background-color: red;
+    background-color: #ff0000;
 }
 
 p.card-counter {
@@ -150,6 +148,7 @@ p.card-counter {
 
 .sortable.disagree .draggable {
     background-color: #ff0000; /*#ffd5d5;*/
+    color: #ffffff;
 }
 
 div.agree, li.agree {
@@ -161,7 +160,8 @@ div.neutral, li.neutral {
 }
 
 div.disagree, li.disagree {
-    background-color: #c00000; /*#ffd5d5;*/
+    background-color: #ff0000; /*#c00000; /*#ffd5d5;*/
+    color: #ffffff;
 }
 
 #login .user-code-form {
